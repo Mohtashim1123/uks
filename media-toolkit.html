@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>UKS</title>
+	<link rel="icon" href="./assets/images/logo.png">
+	<link href="assets/css/allcss.css" type="text/css" rel="stylesheet" />
+	<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="homepage">
+	<div id="search">
+		<button type="button" class="close">x</button>
+		<form>
+			<input type="search" id="myInput" value="" placeholder="Search here..." />
+		</form>
+	</div>
+	<div id="loader-wrapper">
+
+		<div id="loading">
+			<div id="loading-center">
+				<div id="loading-center-absolute">
+					<img src="assets/images/logo.png" alt="">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+
+	<section class="top_bar">
+		<div class="logo-sec wow slideInLeft">
+			<a href="index.html"> <img src="assets/images/logo.png" alt="ward howell" /></a>
+		</div>
+	</section>
+
+	<header>
+		<section class="header_Sec">
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-8 col-md-offset-2">
+						<div class="navbar navbar-inverse navbar-static-top wow slideInUp" role="navigation">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="navbar-collapse collapse">
+								<ul class="nav navbar-nav wow fadeInDown">
+									<li><a href="./story-of-uks.html">about us</a></li>
+									<li><a href="./Intro-01.html">Projects</a></li>
+									<li><a href="./media-monitoring.html">Media Monitoring</a></li>
+									<li><a href="./news-insights.html">News & insights</a></li>
+									<li><a href="./contact-us.html">Contact us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="top_social">
+							<a href="javascript:;"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;"><i class="fa fa-instagram"></i></a>
+							<a href="#search"><i class="fa fa fa-search"></i></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</header>
+	<section class="story_navbar">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-md-8 col-sm-offset-2">
+					<div class="story_nav_box">
+						<ul>
+							<li><a href="./annual-desk-diaries.html">Publications</a></li>
+							<li><a href="./radio-series.html">Radio</a></li>
+							<li><a href="./community-interaction-sessions.html">Trainings</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="radio-sec">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-md-3">
+					<div class="sidebar">
+						<ul>
+							<li><a href="./annual-desk-diaries.html">Annual desk diaries</a></li>
+							<li><a href="./media-toolkit.html">Media toolkits</a></li>
+							<li><a href="./research-reports.html">Research reports</a></li>
+							<li><a href="./brochures-poster.html">Posters and Brochures</a></li>
+							<li><a href="./articles.html">Articles</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-9">
+
+					<div class="radio-caption">
+						<h3>Media Toolkit</h3>
+					</div>
+
+					<div class="filter-sec">
+						<div class="filter-box">
+							<form>
+								<label>Sort by Theme</label>
+								<select id="select1" onchange="sortByTheme()">
+									<option value="all">All</option>
+									<option value="GenderSensitive">Gender sensitive media</option>
+									<option value="DisasterPreventionRehabilitation">Disaster Prevention Rehabilitation</option>
+									<option value="HIVAIDS">HIV And AIDS</option>
+									<option value="HumanRights">human Rights</option>
+									<option value="womenEmpowerment">Women Empowerment</option>
+								</select>
+							</form>
+						</div>
+
+						<div class="filter-box">
+							<form>
+								<label>Sort by Year</label>
+								<select id='select2' onchange="numbers()">
+									<option class="alls" value="all">All</option>
+									<option class="alls" value="2016">2016</option>
+									<option class="alls" value="2013">2013</option>
+									<option class="alls" value="2012">2012</option>
+									<option class="alls" value="2009">2009</option>
+									<option class="alls" value="2008">2008</option>
+									<option class="alls" value="2007">2007</option>
+								</select>
+							</form>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="container">
+							<div class="renderRow">
+
+								<div id="filtered-main">
+
+								</div>
+
+							</div>
+						</div>
+						<div id="main">
+							<div class="col-md-12">
+								<div class="main-toolkit-sec Gender_sensitive_media 2016">
+									<div class="toolkit-left">
+										<img src="assets/images/booklet.jpeg" alt="" style="
+			width: 114px;
+			height: 169px;
+		">
+									</div>
+
+									<div class="research-box toolkit-right ">
+										<span>2016</span>
+										<h3>Booklet for Media Practitioners –Gender-sensitive Reporting on Violence against Women (Urdu)</h3>
+										<a href="https://dl.dropboxusercontent.com/s/61xr77f1c706qu6/Booklet%20for%20Media%20Practitioners%20-Gender-sensitive%20Reporting%20on%20Violence%20against%20Women%20%28Urdu%29.pdf"
+										 download><i class="fa fa-download"></i>Download</a>
+									</div>
+								</div>
+
+								<div class="main-toolkit-sec Gender_sensitive_media 2013">
+									<div class="toolkit-left">
+										<img src="assets/images/Engendering Change.jpg" alt="" style="
+			   width: 114px;
+			   height: 169px;
+		   ">
+									</div>
+
+
+									<div class="research-box toolkit-right ">
+										<span>2013</span>
+										<h3>A Toolkit for a More Gender Responsive Media </h3>
+										<a href="https://dl.dropboxusercontent.com/s/zx53h5gmm255p3z/Engendering%20Change-ilovepdf-compressed.pdf"
+										 download><i class="fa fa-download"></i>Download</a>
+									</div>
+								</div>
+
+								<div class="main-toolkit-sec Disaster_Prevention_Rehabilitation 2012">
+									<div class="toolkit-left">
+										<img src="assets/images/Covering Disasters through the Lens of Gender.jpg" alt="" style="
+				   width: 114px;
+				   height: 169px;
+			   ">
+									</div>
+
+									<div class="research-box toolkit-right ">
+										<span>2012</span>
+										<h3>CoveringDisasters Through the Lens of Gender</h3>
+										<a href="https://dl.dropboxusercontent.com/s/pze7zpdhkmfcvok/Covering%20Disasters%20through%20the%20Lens%20of%20Gender.pdf"
+										 download><i class="fa fa-download"></i>Download</a>
+									</div>
+								</div>
+
+								<div class="main-toolkit-sec HIV_AIDS 2007">
+									<div class="toolkit-left">
+										<img src="assets/images/A Gender-Sensitive Media Toolkit - Making It Easier To Report On HIV AIDS (English).jpg"
+										 alt="" style="
+					 width: 114px;
+					 height: 169px;
+				 " />
+									</div>
+
+									<div class="research-box toolkit-right ">
+										<span>2007</span>
+										<h3>A Gender Sensitive Media Toolkit-Making it Easier to Report on HIV and AIDS </h3>
+										<a href="https://dl.dropboxusercontent.com/s/o0la19ugid09i82/Media%20Resource%20Book%20on%20HIV%20and%20AIDS.pdf"
+										 download><i class="fa fa-download"></i>Download English</a><br>
+										<a href="https://dl.dropboxusercontent.com/s/4e82kse3bfprk85/A%20Gender-Sensitive%20Media%20Toolkit%20-%20Making%20It%20Easier%20To%20Report%20On%20HIV%20AIDS%20%28Urdu%29.pdf"
+										 download><i class="fa fa-download"></i>Download Urdu</a>
+									</div>
+								</div>
+
+								<div class="main-toolkit-sec Human_Rights 2009">
+									<div class="toolkit-left">
+										<img src="assets/images/Understanding Disability A Media Guide.jpg" alt="" style="
+					   width: 114px;
+					   height: 169px;
+				   ">
+									</div>
+
+									<div class="research-box toolkit-right ">
+										<span>2009</span>
+										<h3>Understanding Disability-A Media Guide</h3>
+										<a href="https://dl.dropboxusercontent.com/s/yb6u8jwg2odf0eu/Understanding%20Disability%20A%20Media%20Guide.pdf"
+										 download><i class="fa fa-download"></i>Download</a>
+									</div>
+								</div>
+
+								<div class="main-toolkit-sec  women_Empowerment 2009">
+									<div class="toolkit-left">
+										<img src="assets/images/Engendering Politics Through Media.jpg" alt="" style="
+						   width: 114px;
+						   height: 169px;
+					   ">
+									</div>
+
+									<div class="research-box toolkit-right">
+										<span>2009</span>
+										<h3>Engendering Politics through Media: A Media Manual on Gender Sensitive Reporting on Women and Political
+											in Pakistan </h3>
+										<a href="https://dl.dropboxusercontent.com/s/4z97f662ek9umv6/Engendering%20Politics%20Through%20Media.pdf"
+										 download><i class="fa fa-download"></i>Download</a>
+									</div>
+								</div>
+
+								<div class="main-toolkit-sec Gender_sensitive_media 2008">
+									<div class="toolkit-left">
+										<img src="assets/images/For_Equity and Equality - A Best Practices Guide for Raising Women's Voices and Concerns Through Radio (2008).jpg"
+										 alt="" style="
+							   width: 114px;
+							   height: 169px;
+						   ">
+									</div>
+
+									<div class="research-box toolkit-right ">
+										<span>2008</span>
+										<h3>For Equity and Equality. A Best Practices Guide for Raising Women’s voices and Concerns through Radio
+										</h3>
+										<a href="https://dl.dropboxusercontent.com/s/c3mk4eon055rg5p/For_Equity%20and%20Equality%20-%20A%20Best%20Practices%20Guide%20for%20Raising%20Women%27s%20Voices%20and%20Concerns%20Through%20Radio%20%282008%29.pdf"
+										 download><i class="fa fa-download"></i>Download</a>
+									</div>
+								</div>
+
+								<div class="main-toolkit-sec  HIV_AIDS 2007">
+									<div class="toolkit-left">
+										<img src="assets/images/Media Resource Book on HIV and AIDS.jpg" alt="" style="
+		  width: 114px;
+		  height: 169px;
+	  " />
+									</div>
+
+									<div class="research-box toolkit-right">
+										<span>2007</span>
+										<h3>Media Resource Book on HIV & AIDS</h3>
+										<a href="https://dl.dropboxusercontent.com/s/o0la19ugid09i82/Media%20Resource%20Book%20on%20HIV%20and%20AIDS.pdf"
+										 download><i class="fa fa-download"></i>Download</a>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer_sec wow fadeInUp">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-2">
+					<div class="footer_logo">
+						<img src="assets/images/footer_img.png" alt="" style="
+	  width: 114px;
+	  height: 169px;
+  " />
+						<p>A research, resource & <br> publication Center on Women <br> & Media </p>
+						<span>All Rights Reserved. Uks 2017</span>
+					</div>
+				</div>
+
+				<div class="col-md-5">
+					<div class="row">
+
+						<div class="col-md-3">
+							<div class="footer_nav">
+								<h2>About Us</h2>
+								<ul>
+									<li><a href="./story-of-uks.html">Story Of Uks</a></li>
+									<li><a href="./vision.html">Mission</a></li>
+									<li><a href="./team.html">Team</a></li>
+									<li><a href="./structure.html">Structure</a></li>
+									<li><a href="./testimonials.html">Testimonials</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="footer_nav">
+								<h2>Projects</h2>
+								<ul>
+									<h3>publication</h3>
+									<li><a href="./fellowships.html">Fellowships & Exchange Programmes</a></li>
+									<li><a href="./ondesk-consultations.html">On-Desk Consultations</a></li>
+									<li><a href="./workshop-for-media-students.html">Workshop for Media Students</a></li>
+									<li><a href="./workshop-for-media-practitioner.html">Workshop for Media Practitioners</a></li>
+									<li><a href="./community-interaction-sessions.html">Community Interaction Sessions</a></li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="col-md-3">
+							<div class="footer_nav">
+								<ul>
+									<h3>radio</h3>
+									<li><a href="./radio-series.html">Radio Series</a></li>
+									<li><a href="./digital-series.html">Digital Series</a></li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="footer_nav">
+								<h2>traning</h2>
+								<ul>
+									<li><a href="./fellowships.html">Fellowships & Exchange Programmes</a></li>
+									<li><a href="./ondesk-consultations.html">On-Desk Consultations</a></li>
+									<li><a href="./workshop-for-media-students.html">Workshop for Media Students</a></li>
+									<li><a href="./workshop-for-media-practitioner.html">Workshop for Media Practitioners</a></li>
+									<li><a href="./community-interaction-sessions.html">Community Interaction Sessions</a></li>
+								</ul>
+							</div>
+						</div>
+
+
+					</div>
+
+
+
+				</div>
+
+				<div class="col-md-2">
+					<div class="footer_nav">
+						<h2>Media Monitoring</h2>
+						<p>Daily Print Media Monitoring
+							Media Analysis Reports
+							GMMP - Pak</p>
+						<ul>
+							<li><a href="./news-insights.html">News & insights</a></li>
+							<li><a href="./contact-us.html">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-2">
+					<div class="form_sec">
+						<form>
+							<input type="text">
+							<input type="submit" class="search-icon" value="">
+						</form>
+						<span>Stay Connected!</span>
+						<div class="footer_social">
+							<a href="javascript:;"><i class="fa fa-facebook"></i></a>
+							<a href="javascript:;"><i class="fa fa-twitter"></i></a>
+							<a href="javascript:;"><i class="fa fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+		</div>
+		</div>
+
+	</footer>
+
+	<section class="policy_sec">
+		<ul>
+			<li><a href="javascript:;">TERMS OF USE</a></li>
+			<li><a href="javascript:;">PRIVACY POLICY</a></li>
+			<li><a href="javascript:;">SITEMAP</a></li>
+		</ul>
+	</section>
+
+	<script src="assets/js/jquery-3.1.1.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/customjs.js"></script>
+	<script src="assets/js/filter.js"></script>
+	<script src="assets/js/media_toolkit.js"></script>
+
+</body>
+
+</html>

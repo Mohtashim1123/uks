@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>UKS</title>
+	<link rel="icon" href="./assets/images/logo.png">
+
+    <link href="assets/css/allcss.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body class="homepage">
+<div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+        <input type="search" id="myInput" value="" placeholder="Search here..." />
+    </form>
+</div>
+<div id="loader-wrapper">
+
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
+<section class="top_bar">
+ <div class="logo-sec wow slideInLeft">
+        <a href="index.html"> <img src="assets/images/logo.png" alt="ward howell"/></a>
+    </div>
+</section>
+
+<header>
+  <section class="header_Sec">
+   <div class="container-fluid">
+    <div class="row">
+		 
+	  <div class="col-md-8 col-md-offset-2">
+	    <div class="navbar navbar-inverse navbar-static-top wow slideInUp" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav wow fadeInDown">
+					<li><a href="./story-of-uks.html">about us</a></li>
+					<li><a href="./Intro.html">Projects</a></li>
+					<li><a href="./media-monitoring.html">Media Monitoring</a></li>
+					<li><a href="./news-insights.html">News & insights</a></li>
+					<li><a href="./contact-us.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+	  </div>
+	   <div class="col-md-2">
+	  <div class="top_social">
+        <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+        <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+        <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+        <a href="#search"><i class="fa fa fa-search"></i></a>
+	  </div>
+	  </div>
+	
+	</div>
+   </div>
+  </section>
+</header>
+
+<section class="story_navbar">
+ <div class="container-fluid">
+  <div class="row">
+  
+   <div class="col-md-8 col-sm-offset-2">
+    <div class="story_nav_box">
+	 <ul>
+	  <li><a href="./annual-desk-diaries.html">Publications</a></li>
+	  <li><a href="./radio-series.html">Radio</a></li>
+	  <li><a href="./community-interaction-sessions.html">Trainings</a></li>
+	 </ul>
+	</div>   
+   </div>
+  
+  </div>
+ </div>
+</section>
+
+
+<section class="radio-sec">
+ <div class="container-fluid">
+  <div class="row">
+  
+    <div class="col-md-3">
+	 <div class="sidebar">
+	  <ul>
+	   <li><a href="./radio-series.html">Radio Series</a></li>
+	   <li><a href="./digital-series.html">Digital Series</a></li>
+	  </ul>
+	 </div>
+	</div>
+	
+	<div class="col-md-9">
+	
+	   <div class="radio-caption">
+		<h3>Digital Series</h3>
+	   </div>
+	   
+	   <div class="filter-sec">
+	    <div class="filter-box">
+		 <form>
+		  <label>Sort by Theme</label>
+		  <select id="select" onchange="sort()">
+		   <option value="all" >All</option>
+		   <option value="WomenEmpowerment" >Women Empowerment</option>
+		   <option value="GendersensitiveMedia" >Gender Sensitive Media</option>
+		   <option value="Energyjournalism" >Energy journalism</option>
+		   <option value="CounteringViolentExtremism" >Countering Violent Extremism</option>
+		   <option value="WomenMedia" >Women Media</option>
+		  </select>
+		 </form>
+		</div>
+		
+		<div class="filter-box">
+		 <form>
+		  <label>Sort by Year</label>
+		  <select id="test" onchange="sortYear()">
+		   <option class="alls" value="all" >All</option>
+		   <option class="alls" value="2017" >2017</option>
+		   <option class="alls" value="2016" >2016</option>
+		   <option class="alls" value="2015" >2015</option>
+		   <option class="alls" value="2014" >2014</option>
+		   <option class="alls" value="2010" >2010</option>
+		  </select>
+		 </form>
+		</div>
+	   </div>
+
+	   
+	   <div class="container">
+			<div class="renderRow">
+
+				<div id="filtered-main">
+
+				</div>
+
+			</div>
+		</div>
+	   
+	   <div id="main">
+	   <div class="series-detail-sec WomenEmpowerment 2017">
+	   
+	    <div class="inner-series-detail custom-inner-html">
+		 <span>September  2017</span>
+		 <h3>Women of Pakistan: The Past and Present</h3>
+<span>Produced by <strong>Nabeela Aslam</strong></span>
+		
+		 <div class="author-sec">
+		  <p>Theme - Women  and  democracy</p>
+		 </div>
+		<span>Funded by <strong>Uks  Radio  Project </strong></span>
+		</div>
+		
+		
+		
+		<div class="video-sec">
+			<img src="assets/images/1png.png" alt="" style="
+			width: 386px;
+			height: 244px;
+		">		</div>
+		
+		 <div class="author-caption custom-text-html">
+		   <p>To  commemorate  the  International  Day  of  Democracy  and  70  years  of  Pakistan,  this  digital  story  paystribute  to  the  resilient  and  courageous  women  who  fought  against  feudal  bureaucracy  and  military  dictatorships.  Leading  movements  and  raising  their  voices  against  the  violation  of  citizen’s  rights  these  women  fought  parallel  battles  with  misogyny  and  patriarchal  mind-sets.</p>
+		  </div>
+	   
+	   </div>
+	   
+	      <div class="series-detail-sec GendersensitiveMedia  2017">
+	   
+	    <div class="inner-series-detail custom-inner-html">
+		 <span>January  ,2017</span>
+		 <h3>Gender Just Media Drive</h3>
+<span>Produced by <strong>Nida  Naeem</strong></span>
+		
+		 <div class="author-sec">
+		  <p>Theme - Gender-sensitive  Media  /  Women’s  Media  complaint  Cell  Promotion</p>
+		 </div>
+		<span>Funded by <strong>National  Endowment  for  Democracy  (NED),  USA</strong></span>
+		</div>
+		
+		
+		
+		<div class="video-sec">
+		 <img src="assets/images/2png.png" alt=""style="
+		 width: 386px;
+		 height: 244px;
+	 "/>
+		</div>
+		
+		 <div class="author-caption custom-text-html">
+		   <p>This  digital  story  summarizes  the  role  of  media  –news,  entertainment,  adverts  –in  reinforcing  negative  and  gender-biased  social  practices  in  the  Pakistani  society.  It  urges  the  audiences  as  media  consumers  to  recognize  the  harmful  content  being  fed  to  them  and  to  raise  their  voice  against  it.  </p>
+		  </div>
+	   
+	   </div>
+	   
+	        <div class="series-detail-sec GendersensitiveMedia 2016">
+	   
+	    <div class="inner-series-detail custom-inner-html">
+		 <span>August,2016</span>
+		 <h3>Entertainment Media in Pakistani: Kal aur Aaj (Past and Present  )</h3>
+<span>Produced by <strong>Nabeela  Aslam</strong></span>
+		
+		 <div class="author-sec">
+		  <p>Theme - Gender-sensitive  Media  </p>
+		 </div>
+		<span>Funded by <strong>National  Endowment  for  Democracy  (NED),  USA</strong></span>
+		</div>
+		
+		
+		
+		<div class="video-sec">
+		 <img src="assets/images/3png.png" alt=""style="
+		 width: 386px;
+		 height: 244px;
+	 "/>
+		</div>
+		
+		 <div class="author-caption custom-text-html">
+		   <p>Discusses  the  shift  in  the  content  through  time  -from  sensitive,  decent  and  positive  content  towards  insensitive,  derogatory,  stereotypical  and  gender-biased  content. </p>
+		
+		  </div>
+	   
+	   </div>
+	   
+	        <div class="series-detail-sec GendersensitiveMedia 2015 ">
+	   
+	    <div class="inner-series-detail custom-inner-html">
+		 <span>2015</span>
+		 <h3>Kahani Badal Rahi Hai (Narrativesare changing)</h3>
+<span>Produced by <strong>Nabila  Aslam</strong></span>
+		
+		 <div class="author-sec">
+		  <p>Theme -Gender-sensitive  Media</p>
+		 </div>
+		<span>Funded by <strong>National  Endowment  for  Democracy  (NED),  USA</strong></span>
+		</div>
+		
+		
+		
+		<div class="video-sec">
+		 <img src="assets/images/Structure2.jpg" alt=""style="
+		 width: 386px;
+		 height: 244px;
+	 "/>
+		</div>
+		
+		 <div class="author-caption custom-text-html">
+		   <p>A digital story on views and reviews of ‘Mothers’ who received training on how to recognize early signs or inclination towards religious extremism in their sons in combatting violent extremism.</p>
+		  </div>
+		  </div>
+
+		  <div class="series-detail-sec Energyjournalism 2015">
+	   
+			<div class="inner-series-detail custom-inner-html">
+			 <span>2015</span>
+			 <h3>Energy for People</h3>
+	<span>Produced by <strong>Nabila  Aslam</strong></span>
+			
+			 <div class="author-sec">
+			  <p>Theme -Alternate  Energy  Sources  –Energy  journalism</p>
+			 </div>
+			<span>Funded by <strong>Shell</strong></span>
+			</div>
+			
+			
+			
+			<div class="video-sec">
+			 <img src="assets/images/4png.png" alt=""style="
+			 width: 386px;
+			 height: 244px;
+		 "/>
+			</div>
+			
+			 <div class="author-caption custom-text-html">
+			   <p>A  series  of  five  interesting  stories  of  women  and  men,  from  rural  areas  of  Pakistan  including  Thatta  and  KotAddu,  depicting  how  people  in  the  far-flung  areas  are  innovatively  using  energy  resources  to  meet  their  needs.The  stories  include  :</p>
+			<ul>
+				<li>Alternate  energy  (Biogas)  initiatives  by  industrialists</li>
+				<li>Natural  gas  load-shedding  impact  onlivelihoods,  Story  of  Tasleem,  a  tailor.</li>
+				<li>Case  studyof  Rukhsana  Shoaib  -a  woman  who  changes  engine  oil  at  a  workshop  in  Kot  Addu,  Sindh  running  a  grocery  store  and  oil  change  shop.</li>
+			<li>Story  of  Azam  Khan,    a  mechanical  engineer  who  designs  solar  energy  based  products</li>
+			</ul> 
+			</div>
+			</div>
+
+			  <div class="series-detail-sec CounteringViolentExtremism 2014">
+	   
+				<div class="inner-series-detail custom-inner-html">
+				 <span>2014</span>
+				 <h3>SAVE Mother Schools</h3>
+		<!-- <span>Produced by <strong>Nabila  Aslam</strong></span> -->
+				
+				 <div class="author-sec">
+				  <p>Countering  Violent  Extremism </p>
+				 </div>
+				<span>Funded by <strong>Sister  Against  Violent  Extremism  (SAVE)</strong></span>
+				</div>
+				
+				
+				
+				<div class="video-sec">
+				 <img src="assets/images/Structure2.jpg" alt=""style="
+				 width: 386px;
+				 height: 244px;
+			 "/>
+				</div>
+				
+				 <div class="author-caption custom-text-html">
+				   <p>A  digital  story  on  views  and  reviews  of  ‘Mothers’  who  received  training  on  how  to  recognize  early  signs  or  inclination  towards  religious  extremism  in  their  sons  in  combatting  violent  extremism.</p>
+				  </div>
+			  </div>
+
+				  <div class="series-detail-sec WomenMedia 2010">
+	   
+					<div class="inner-series-detail custom-inner-html">
+					 <span>2010</span>
+					 <h3>More Women in Media</h3>
+			<!-- <span>Produced by <strong>Nabila  Aslam</strong></span> -->
+					
+					 <div class="author-sec">
+					  <p>Women  in  Media </p>
+					 </div>
+					<span>Funded by <strong>DANIDA</strong></span>
+					</div>
+					
+					
+					
+					<div class="video-sec">
+					 <img src="assets/images/5png.png" alt=""style="
+					 width: 386px;
+					 height: 244px;
+				 "/>
+					</div>
+					
+					 <div class="author-caption custom-text-html">
+					   <p>More  of  a  treasure  trove,  this  digital  story  brings  together  the  views  of  the  top  female  names  in  journalism  in  Pakistan,  sharing  their  storiesof  hitting  their  heads  against  the  glass  ceilingstill  it  gave  way!!The  aim  is  to  highlight  the  fact  that  gender-responsive  media  content  can  only  be  produced  through  inclusion  of  women  and  their  views.  Women  need  to  be  at  all  tiers  of  production  of  media  content  so  that  the  perspectives  of  almost  half  the  population  of  the  country  are  understood  and  taken  account  of. </p>
+					  </div>
+				  </div>
+		  
+		  
+	   
+	   </div>
+	</div>
+	</div>
+     
+  
+  </div>
+ </div>
+</section>
+
+
+<footer class="footer_sec wow fadeInUp">
+ <div class="container">
+  <div class="row">
+    
+	<div class="col-md-2">
+	 <div class="footer_logo">
+	  <img src="assets/images/footer_img.png" alt=""/>
+	  <p>A research, resource & <br> publication Center on Women <br> & Media </p>
+	  <span>All Rights Reserved. Uks 2017</span>
+	 </div>
+	</div>
+	
+	<div class="col-md-5">
+			<div class="row">
+			
+			 <div class="col-md-3">
+			  <div class="footer_nav">
+			   <h2>About Us</h2>
+			   <ul>
+				   <li><a href="./story-of-uks.html">Story Of Uks</a></li>
+				   <li><a href="./vision.html">Mission</a></li>
+				   <li><a href="./team.html">Team</a></li>
+				   <li><a href="./structure.html">Structure</a></li>
+				   <li><a href="./testimonials.html">Testimonials</a></li>
+			   </ul>
+			  </div>
+			 </div>
+			 
+			  <div class="col-md-3">
+				<div class="footer_nav">
+			   <h2>Projects</h2>
+			   <ul>
+				<h3>publication</h3>
+				<li><a href="./fellowships.html">Fellowships & Exchange Programmes</a></li>
+				<li><a href="./ondesk-consultations.html">On-Desk Consultations</a></li>
+				<li><a href="./workshop-for-media-students.html">Workshop for Media Students</a></li>
+				<li><a href="./workshop-for-media-practitioner.html">Workshop for Media Practitioners</a></li>
+				<li><a href="./community-interaction-sessions.html">Community Interaction Sessions</a></li>
+			   </ul>
+				</div>
+			  </div>
+	   
+	   
+			   <div class="col-md-3">
+					   <div class="footer_nav">
+			   <ul>
+				<h3>radio</h3>
+				<li><a href="./radio-series.html">Radio Series</a></li>
+				<li><a href="./digital-series.html">Digital Series</a></li>
+			   </ul>
+			   
+			  </div>
+			  </div>
+				<div class="col-md-6">
+			  <div class="footer_nav">
+				<h2>traning</h2>
+			   <ul>
+				   <li><a href="./fellowships.html">Fellowships & Exchange Programmes</a></li>
+				   <li><a href="./ondesk-consultations.html">On-Desk Consultations</a></li>
+				   <li><a href="./workshop-for-media-students.html">Workshop for Media Students</a></li>
+				   <li><a href="./workshop-for-media-practitioner.html">Workshop for Media Practitioners</a></li>
+				   <li><a href="./community-interaction-sessions.html">Community Interaction Sessions</a></li>
+			   </ul>
+			  </div>
+			 </div>
+			 </div>
+			</div>
+	 
+	 <div class="col-md-2">
+	 <div class="footer_nav">
+	     <h2>Media Monitoring</h2>
+		  <p>Daily Print Media Monitoring
+Media Analysis Reports
+GMMP - Pak</p>
+		<ul>
+		 <li><a href="./news-insights.html">News & insights</a></li>  
+		 <li><a href="./contact-us.html">Contact us</a></li>
+		</ul>
+	   </div> 
+	</div>
+	
+	<div class="col-md-2">
+	 <div class="form_sec">
+	  <form>
+	   <input type="text">
+	   <input type="submit" class="search-icon" value="">
+	  </form>
+	   <span>Stay Connected!</span>
+	   <div class="footer_social">
+        <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+        <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+        <a href="javascript:;"><i class="fa fa-youtube"></i></a>
+	  </div>
+	   </div> 
+	</div>
+	 
+	</div>
+	
+	
+	
+  </div>
+ </div>
+ 
+</footer>
+
+<section class="policy_sec">
+ <ul>
+  <li><a href="javascript:;">TERMS OF USE</a></li>
+  <li><a href="javascript:;">PRIVACY POLICY</a></li>
+  <li><a href="javascript:;">SITEMAP</a></li>
+ </ul>
+</section>
+
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/customjs.js"></script>
+<script src="assets/js/radioFilter.js"></script>
+<script src="assets/js/digital_series.js"></script>
+
+</body>
+</html>
